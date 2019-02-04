@@ -18,7 +18,8 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+ent-v314-015:~ student$ echo hello
+hello
 
 
 ==========
@@ -28,7 +29,8 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+ent-v314-015:~ student$ echo hello there
+hello there
 
 
 ==========
@@ -38,7 +40,8 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+ent-v314-015:~ student$ echo good mornin'
+> 
 
 
 ==========
@@ -56,7 +59,8 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+ent-v314-015:~ student$ echo "good mornin'"
+good mornin'
 
 
 ==========
@@ -66,7 +70,7 @@ $ echo *
 
 What happens?
 ----------
-
+The program output a lot of files.
 
 
 ==========
@@ -74,7 +78,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+ent-v314-015:~ student$ clear
 
 
 ==========
@@ -87,7 +91,13 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+ent-v314-015:~ student$ curl google.com
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +107,8 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+ent-v314-015:~ student$ curl www.google.com
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head><meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"><meta content="noodp" name="robots"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title><script nonce="fzxi64GFZDdLclGnWjnhVw==">(function(){window.google=
 
 
 ==========
@@ -105,7 +116,10 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
-
+ent-v314-015:~ student$ curl -o search-browser www.google.com
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 12223    0 12223    0     0   121k      0 --:--:-- --:--:-- --:--:--  121k
 
 
 ==========
