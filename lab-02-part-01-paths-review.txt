@@ -56,7 +56,7 @@ ent-v314-015:desktop student$ pwd
 ==========
 8. If you're in your home directory, how would you create a new directory on your desktop called stuff without changing your directory?  Write your command below.
 ----------
-ent-v314-015:desktop student$ mkdir stuff
+ent-v314-015:~ student$ mkdir /desktop/stuff
 
 
 ==========
@@ -68,7 +68,7 @@ ent-v314-015:/ student$ mkdir ~/desktop/more-stuff
 ==========
 10. If you're in your Desktop directory, how would you create a new directory on your desktop called even-more-stuff?  Write your command below.
 ----------
-
+ent-v314-015:Desktop student$ mkdir even-more-stuff
 
 
 ==========
