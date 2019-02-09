@@ -170,6 +170,35 @@ $ curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs
 
 Write down the command that you used to uncompress the file.
 ----------
+Quincy@DESKTOP-GMRF7TO MINGW64 ~/downloads
+$ unzip mtec1002-lab-02
+Archive:  mtec1002-lab-02.zip
+   creating: mtec1002-lab-02/
+  inflating: mtec1002-lab-02/.DS_Store
+   creating: __MACOSX/
+   creating: __MACOSX/mtec1002-lab-02/
+  inflating: __MACOSX/mtec1002-lab-02/._.DS_Store
+   creating: mtec1002-lab-02/books/
+   creating: mtec1002-lab-02/books/other/
+  inflating: mtec1002-lab-02/books/other/pg1232.txt
+   creating: mtec1002-lab-02/books/science-fiction/
+  inflating: mtec1002-lab-02/books/science-fiction/pg84.txt
+  inflating: mtec1002-lab-02/books/science-fiction/pg86.txt
+   creating: mtec1002-lab-02/logs/
+  inflating: mtec1002-lab-02/logs/.DS_Store
+   creating: __MACOSX/mtec1002-lab-02/logs/
+  inflating: __MACOSX/mtec1002-lab-02/logs/._.DS_Store
+   creating: mtec1002-lab-02/web/
+  inflating: mtec1002-lab-02/web/about.html
+   creating: mtec1002-lab-02/web/css/
+  inflating: mtec1002-lab-02/web/css/screen.css
+   creating: mtec1002-lab-02/web/img/
+  inflating: mtec1002-lab-02/web/img/otters-1.jpg
+  inflating: mtec1002-lab-02/web/img/otters-2.jpg
+  inflating: mtec1002-lab-02/web/img/otters-3.jpg
+  inflating: mtec1002-lab-02/web/img/otters-4.jpg
+  inflating: mtec1002-lab-02/web/img/otters-5.jpg
+  inflating: mtec1002-lab-02/web/index.html
 
 
 
@@ -178,7 +207,9 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
-
+Quincy@DESKTOP-GMRF7TO MINGW64 ~/downloads/mtec1002-lab-02
+$ ls
+books/  logs/  web/
 
 
 ==========
@@ -189,9 +220,48 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
-
-
+Quincy@DESKTOP-GMRF7TO MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ mtec1002-lab-02.zip
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{54ba9593-5b8b-11e8-8c27-98eecb57b816}.TM.blf
+ NTUSER.DAT{54ba9593-5b8b-11e8-8c27-98eecb57b816}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{54ba9593-5b8b-11e8-8c27-98eecb57b816}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ PicStream/
+ Pictures/
+ PrintHood@
+ Quincy-mtec1002/
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ stuff/
+ Templates@
+ Videos/
+ 
 ==========
 17. Change into the "stuff" directory that you just created.  Run the following command (we haven't learned this exact command yet, but we will in the next lab!) exactly as described below:
 
@@ -201,7 +271,12 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
+Quincy@DESKTOP-GMRF7TO MINGW64 ~/stuff
+$ echo "hi" > hello.txt
 
+Quincy@DESKTOP-GMRF7TO MINGW64 ~/stuff
+$ ls
+hello.txt
 
 
 ==========
@@ -213,7 +288,10 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+Quincy@DESKTOP-GMRF7TO MINGW64 ~
+$ tar -cvf stuff.tar stuff
+stuff/
+stuff/hello.txt
 
 
 ==========
@@ -231,8 +309,48 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
-
+Quincy@DESKTOP-GMRF7TO MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ mtec1002-lab-02.zip
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{54ba9593-5b8b-11e8-8c27-98eecb57b816}.TM.blf
+ NTUSER.DAT{54ba9593-5b8b-11e8-8c27-98eecb57b816}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{54ba9593-5b8b-11e8-8c27-98eecb57b816}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ PicStream/
+ Pictures/
+ PrintHood@
+ Quincy-mtec1002/
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ stuff/
+ stuff.tar
+ Templates@
+ Videos/
 
 ==========
 21. Now compress it!  Type:
